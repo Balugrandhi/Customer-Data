@@ -1,0 +1,129 @@
+body{
+  overflow: hidden;
+}
+
+.totaldiv {
+  width: fit-content;
+}
+
+/* Apply styles to the table */
+table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: auto;
+  height: 60vh;
+}
+
+thead {
+  position: sticky;
+    top: 0;
+}
+
+/* Style table headers */
+th, td {
+  width: inherit;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add some style to the header row */
+th {
+  background-color: #f2f2f2;
+}
+
+tr {
+  width: 100vw;
+}
+
+/* Add zebra-striping to the table rows */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Highlight on hover */
+tr:hover {
+  background-color: #e5e5e5;
+}
+
+
+/* Basic Input Styling */
+input[type="text"] {
+  margin-left: 45%;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50; /* Green color or your desired focus color */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Optional: Add a subtle box shadow */
+}
+
+/* Optional: Placeholder Styling */
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+/* Optional: Disabled Input Styles */
+input[type="text"]:disabled {
+  background-color: #f2f2f2;
+  color: #777;
+}
+
+/* Pagination Container */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination Item */
+.pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Pagination Link Styles */
+.pagination a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Pagination Link Hover Styles */
+.pagination a:hover {
+  background-color: #4CAF50; /* Green color or your desired hover color */
+  color: #fff;
+  border-color: #4CAF50;
+}
+
+
+/* Additional styling for the scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2; /* Color of the scrollbar track */
+}
